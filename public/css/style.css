@@ -1,0 +1,30 @@
+/* Navigation Bar */
+
+.navigation_bar   {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 6rem;
+}
+
+.nav_container    {
+      display: flex;
+      align-items: center;
+}
+
+.nav_container li a     {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #222222;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+}
+
+.nav_container li a:hover {
+      background-color: #01A3DD;
+      color: #f1f1f1;
+}
+
+/* Fine Navigation Bar */
