@@ -169,9 +169,12 @@ nav a:hover {
 
 /* Start Aside Widget */
 
+.widget_body      {
+      margin-top: 30px;
+}
+
 .widget_title     {
       margin-top: 30px;
-      margin-bottom: 20px;
 }
 
 .widget_title_text      {
@@ -220,10 +223,10 @@ nav a:hover {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
+      gap: 30px;
 }
 
 .widget_departments     {
-      margin-top: 30px;
       width: 150px;
       height: 150px;
 }
@@ -261,5 +264,114 @@ nav a:hover {
 
 /* End Aside Widget */
 
+/* Start Articles */
+.flex {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+article     {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 20px;
+}
+
+article a   {
+      text-decoration: none;
+}
+
+article .news_data      {
+      display: flex;
+      margin-top: 20px;
+}
+
+article .news_posted_at {
+      background-color: #2b4c99;
+      color: #fff;
+      font-size: 12px;
+      margin-right: 2px;
+      padding: 10px;
+}
+
+article .news_comments  {
+      background-color: #39aae1;
+      color: #fff;
+      font-size: 12px;
+      padding: 10px;
+}
+
+article .news_thumbnail {
+      margin-top: 30px;
+}
+article  .news_thumbnail img  {
+      width: 100%;
+      height: 300px;
+}
+
+article .news_title     {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      color: #000;
+      font-size: 23px;
+}
+
+article .news_resume    {
+      color: #5c5c5c;
+      font-size: 14px;
+      line-height: 19px;
+}
+
+/* End Articles */
 
 /* End Content */
+
+/* Start Footer */
+
+footer      {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+}
+
+.flex_column      {
+      flex-direction: column;
+}
+
+.footer_menu      {
+      display: flex;
+}
+
+.fm_health,
+.fm_medical,
+.fm_online  {
+      flex: 1;
+      color: #fff;
+      padding: 20px;
+}
+
+.fm_health  {
+      background-color: #39aae1;
+}
+
+.fm_medical {
+      background-color: #0079c7;
+}
+
+.fm_online  {
+      background-color: #2b4c99;
+}
+
+.footer_area      {
+      display: flex;
+}
+
+.footer_areaitem  {
+      color: #fff;
+      flex: 1;
+}
+
+footer .widget_title_text     {
+      color: #fff;
+}
+
+/* End Footer */
