@@ -367,6 +367,7 @@ footer   {
 .footer_menu a {
    display: block;
    text-decoration: none;
+   color: var(--white);
 }
 
 .footer_health,
@@ -433,7 +434,7 @@ footer .widget_title_text  {
 }
 
 .footer_area_text {
-   font-size: 16px;
+   font-size: 14px;
    color: var(--footer_text_color);
 }
 
@@ -517,3 +518,97 @@ footer .widget_title_text  {
    margin-top: 30px;
    line-height: 40px;
 }
+
+.menuMobile {
+   display: none;
+   width: 40px;
+   height: 40px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-right: 20px;
+}
+
+.mm_line {
+   height: 3px;
+   background-color: var(--light_ciano);
+}
+
+/* End Footer */
+
+/* Start Media queries */
+
+   @media (max-width:768px)   {
+
+      header .container {
+         flex-direction: row;
+      }
+
+      header   {
+         height: auto;
+      }
+
+      .logo {
+         padding-left: 20px;
+      }
+
+      .menuMobile {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+      }
+
+      nav ul   {
+         flex-direction: column;
+         display: none;
+         position: absolute;
+         left: 0;
+         width: 100%;
+         background-color: var(--white);
+      }
+
+      .banner_headline  {
+         padding: 20px;
+      }
+
+      .banner_headline h1  {
+         font-size: 55px;
+      }
+
+      .banner_headline h2  {
+         font-size: 17px;
+      }
+
+      .banner_options   {
+         height: auto;
+         flex-direction: column;
+         margin-bottom: 100px;
+      }
+
+      .container  {
+         flex-direction: column;
+      }
+
+      #content {
+         margin-top: 100px;
+      }
+
+      #content section,
+      #content aside {
+         margin: 20px;
+      }
+
+      .footer_menu   {
+         flex-direction: column;
+      }
+
+      .footer_area   {
+         flex-direction: column;
+         padding: 20px;
+      }
+
+      .footer_copy   {
+         padding-left: 20px;
+      }
+   }
+
+/* End Media queries */
